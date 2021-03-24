@@ -20,9 +20,6 @@ public class OnlyOfficeClient {
 
     public OnlyOfficeClient(String url) {
         this.url = url;
-        if (!this.url.endsWith("/")) {
-            this.url = this.url + "/";
-        }
     }
 
     public String sendPOST(String fileUrl, String targetSuffix) {
